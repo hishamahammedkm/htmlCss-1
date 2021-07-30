@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/logo.png" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game controller</a></li>
+                    <li><a href="">Game Accessories</a></li>
+                    <li><a href="">Game Tab</a></li>
+                    <li><a href="">Others</a></li>
+
+                </ul>
+            </nav>
+            <img onclick="toggleMenu()" src="image/menu.png" alt="" class="menu-icon">
+
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 v2 <br>DualBoot</h2>
+                <h3>Wireless Container for Palystation 4</h3>
+                <p>(Compatibe/Generic)</p>
+                <h4>$ 32</h4>
+                <button type="button">Buy Now <img src="image/arrow.png" alt=""></button>
+            
+            </div>
+            <div class="col-2">
+                <img src="image/controller.png" class="controller" alt="">
+                <div class="color-box">
+                    
+                </div>
+                <div class="add-btn">
+                    <img src="image/add.png" alt="">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="image/fb.png" alt="">
+            <img src="image/tw.png" alt="">
+            <img src="image/ig.png" alt="">
+
+        </div>
+    </div>
+    <script>
+        var menu = document.getElementById('menuList')
+        menu.style.maxHeight='0px'
+        function toggleMenu(){
+            if(menu.style.maxHeight == '0px'){
+                menu.style.maxHeight = '130px'
+            }else{
+                menu.style.maxHeight = '0px'
+            }
+        }
+    </script>
+</body>
+</html>
